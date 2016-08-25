@@ -82,6 +82,12 @@ public class ChocolateSolverTest {
     }
 
     @Test
+    public void test() throws Exception {
+        int numSmalls = solver.makeChocolate(15, 5, 24);
+        assertEquals(4, numSmalls);
+    }
+
+    @Test
     public void testExcessBigsEnoughSmalls() throws Exception {
         int numSmalls = solver.makeChocolate(2, 20, 12);
         assertEquals(2, numSmalls);
